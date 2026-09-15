@@ -1073,10 +1073,11 @@ footer {
 
         </div>
 
-<form
-    id="orderForm"
-    action="https://formsubmit.co/kashifkhan789053@gmail.com"
-    method="POST">
+
+        <form
+            id="orderForm"
+            novalidate>
+
 
             <!-- FULL NAME -->
 
@@ -1270,8 +1271,137 @@ footer {
             <!-- INFORMATION -->
 
             <div class="form-group">
-
                 <label for="message">
-
                     Additional Information
                     <span class="required">*</span>
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write any additional information about your order"
+                    required
+                    minlength="2"></textarea>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <button type="submit" class="btn btn-primary" style="width:100%; margin-top:10px;">
+                ✅ Submit Order
+            </button>
+
+            <div id="formStatus" role="status"
+                 style="display:none; margin-top:18px; padding:15px; border-radius:10px; text-align:center; font-weight:bold;">
+            </div>
+
+        </form>
+
+        <!-- DIRECT WHATSAPP ORDER -->
+        <div style="text-align:center; margin-top:18px;">
+            <p style="margin-bottom:8px; font-weight:bold;">یا براہِ راست WhatsApp پر رابطہ کریں:</p>
+            <a
+                href="https://wa.me/923335346693?text=Assalam-o-Alaikum%20Kashi%20Khan%2C%20mujhe%20aap%20ki%20service%20ke%20bare%20mein%20order%20karna%20hai."
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary">
+                💬 WhatsApp Order
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section id="contact">
+
+    <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>For orders and professional digital services</p>
+    </div>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+            📱 <strong>WhatsApp / Contact:</strong>
+            <a href="https://wa.me/923335346693" target="_blank" rel="noopener">
+                0333-5346693
+            </a>
+        </div>
+
+        <div class="contact-item">
+            💬 <strong>WhatsApp:</strong>
+            <a href="https://wa.me/923335346693" target="_blank" rel="noopener">
+                Chat on WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Kashi Khan | Digital & Office Services</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("orderForm");
+    const status = document.getElementById("formStatus");
+
+    const myWhatsApp = "923335346693";
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        const data = new FormData(form);
+
+        const fullName = data.get("fullName") || "";
+        const phone = data.get("phone") || "";
+        const email = data.get("email") || "";
+        const service = data.get("service") || "";
+        const matric = data.get("matric") || "";
+        const fsc = data.get("fsc") || "";
+        const skills = data.get("skills") || "";
+        const message = data.get("message") || "";
+
+        const whatsappMessage =
+`*New Order - Kashi Khan Website*
+
+*Name:* ${fullName}
+*Customer WhatsApp/Contact:* ${phone}
+*Gmail:* ${email}
+*Required Service:* ${service}
+*Matric Marks:* ${matric}
+*FSC / Intermediate Marks:* ${fsc}
+*Skills:* ${skills}
+*Additional Information:* ${message}`;
+
+        const whatsappURL =
+            "https://wa.me/" + myWhatsApp +
+            "?text=" + encodeURIComponent(whatsappMessage);
+
+        status.style.display = "block";
+        status.style.background = "#dcfce7";
+        status.style.color = "#166534";
+        status.textContent = "✅ آپ کا آرڈر تیار ہے۔ WhatsApp کھولا جا رہا ہے...";
+
+        window.open(whatsappURL, "_blank");
+
+        setTimeout(function () {
+            form.reset();
+        }, 500);
+    });
+
+});
+</script>
+
+</body>
+</html>
