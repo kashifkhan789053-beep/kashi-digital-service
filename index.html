@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Kashi Khan | CV, Data Entry, MS Word, Excel & PowerPoint Services
+    </title>
+
+    <meta name="description"
+        content="Kashi Khan provides professional CV creation, Data Entry, MS Word, MS Excel, PowerPoint, Logo Design, Graphic Design and Digital Marketing services.">
+
+    <meta name="keywords"
+        content="Kashi Khan, CV Creation, Data Entry, MS Word, MS Excel, PowerPoint, Logo Design, Graphic Design, Digital Marketing">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://kashifkhan789053-beep.github.io/kashi-khan-website/">
+
+    <meta name="theme-color" content="#2563eb">
+
+    <link rel="manifest" href="./manifest.webmanifest">
+
+
+<style>
+
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #2563eb
+        );
+
+    color: white;
+
+    padding: 18px 7%;
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.15);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #93c5fd;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 9px 12px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section {
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+
+/* =========================
+   HERO / HOME
+========================= */
+
+.hero {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(15,23,42,0.85),
+            rgba(37,99,235,0.80)
+        );
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 9vw, 80px);
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: clamp(22px, 5vw, 35px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.18);
+}
+
+.btn-white {
+    background: white;
+    color: #2563eb;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 22px;
+}
+
+.card {
+
+    background: white;
+
+    padding: 30px 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 8px 25px rgba(15,23,42,0.07);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,0.15);
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   MY WORK
+========================= */
+
+.samples {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 22px;
+}
+
+.sample {
+
+    min-height: 180px;
+
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    border: 2px dashed #93c5fd;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.sample:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-container {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(15,23,42,0.10);
+}
+
+.notice {
+
+    background: #eff6ff;
+
+    border-left: 5px solid #2563eb;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+.required {
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37,99,235,0.12);
+}
+
+textarea {
+
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* Validation */
+
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+
+    border-color: #ef4444;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.contact-item {
+
+    background: white;
+
+    padding: 20px;
+
+    margin: 12px 0;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 7%;
+}
+
+
+/* =========================
+   WELCOME SCREEN
+========================= */
+
+#welcomeScreen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #2563eb
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    animation:
+        welcomeFade 1s ease 5s forwards;
+}
+
+.welcome-box {
+    padding: 30px;
+}
+
+.welcome-box h1 {
+
+    font-size:
+        clamp(35px, 8vw, 70px);
+
+    margin-bottom: 15px;
+}
+
+.welcome-box p {
+    font-size: 20px;
+}
+
+@keyframes welcomeFade {
+
+    to {
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        pointer-events: none;
+    }
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+
+    position: fixed;
+
+    top: -15px;
+
+    width: 9px;
+
+    height: 9px;
+
+    z-index: 100000;
+
+    animation:
+        confettiFall 4s linear infinite;
+}
+
+@keyframes confettiFall {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    header {
+        padding: 15px 4%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .form-container {
+        padding: 22px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     WELCOME SCREEN
+================================================== -->
+
+<div id="welcomeScreen">
+
+    <div class="welcome-box">
+
+        <h1>
+            🎉 Congratulations!
+        </h1>
+
+        <p>
+            Welcome to My Website
+        </p>
+
+        <p>
+            <strong>
+                Kashi Khan | Digital & Office Services
+            </strong>
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+    <div class="navbar">
+
+        <div class="logo">
+
+            Kashi
+            <span>Khan</span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#work">
+                My Work
+            </a>
+
+            <a href="#apply">
+                Apply Now
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ==================================================
+     HOME
+================================================== -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Kashi Khan
+        </h1>
+
+        <h2>
+            Digital & Office Services
+        </h2>
+
+        <p>
+            Professional CV • Office Work • Design • Data Entry
+        </p>
+
+
+        <a
+            href="#services"
+            class="btn btn-white">
+
+            View Services
+
+        </a>
+
+
+        <a
+            href="#apply"
+            class="btn btn-primary">
+
+            Apply / Order Now
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     SERVICES
+================================================== -->
+
+<section id="services">
+
+    <div class="section-title">
+
+        <h2>
+            My Services
+        </h2>
+
+        <p>
+            Professional digital and office services
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📄
+            </div>
+
+            <h3>
+                CV Creation
+            </h3>
+
+            <p>
+                Professional and modern CV creation and formatting.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📝
+            </div>
+
+            <h3>
+                MS Word
+            </h3>
+
+            <p>
+                Professional documents, typing and formatting.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📊
+            </div>
+
+            <h3>
+                MS Excel
+            </h3>
+
+            <p>
+                Excel sheets, tables, data entry and formatting.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📽️
+            </div>
+
+            <h3>
+                PowerPoint
+            </h3>
+
+            <p>
+                Professional PowerPoint presentations and slides.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                ⌨️
+            </div>
+
+            <h3>
+                Data Entry
+            </h3>
+
+            <p>
+                Accurate data entry and document processing.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🎨
+            </div>
+
+            <h3>
+                Logo Design
+            </h3>
+
+            <p>
+                Creative logos and graphic design services.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📢
+            </div>
+
+            <h3>
+                Digital Marketing
+            </h3>
+
+            <p>
+                Digital marketing and social media support.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🎬
+            </div>
+
+            <h3>
+                Video Editing
+            </h3>
+
+            <p>
+                Video editing and social media content creation.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     MY WORK
+================================================== -->
+
+<section id="work">
+
+    <div class="section-title">
+
+        <h2>
+            My Work Samples
+        </h2>
+
+        <p>
+            Explore different categories of my work
+        </p>
+
+    </div>
+
+
+    <div class="samples">
+
+
+        <div class="sample">
+
+            <div class="card-icon">
+                📄
+            </div>
+
+            <h3>
+                CV Samples
+            </h3>
+
+            <p>
+                Professional CV designs
+            </p>
+
+        </div>
+
+
+        <div class="sample">
+
+            <div class="card-icon">
+                📝
+            </div>
+
+            <h3>
+                MS Word
+            </h3>
+
+            <p>
+                Documents and formatting
+            </p>
+
+        </div>
+
+
+        <div class="sample">
+
+            <div class="card-icon">
+                📊
+            </div>
+
+            <h3>
+                MS Excel
+            </h3>
+
+            <p>
+                Excel sheets and data
+            </p>
+
+        </div>
+
+
+        <div class="sample">
+
+            <div class="card-icon">
+                📽️
+            </div>
+
+            <h3>
+                PowerPoint
+            </h3>
+
+            <p>
+                Presentation samples
+            </p>
+
+        </div>
+
+
+        <div class="sample">
+
+            <div class="card-icon">
+                ⌨️
+            </div>
+
+            <h3>
+                Data Entry
+            </h3>
+
+            <p>
+                Data entry work
+            </p>
+
+        </div>
+
+
+        <div class="sample">
+
+            <div class="card-icon">
+                🎨
+            </div>
+
+            <h3>
+                Logo Design
+            </h3>
+
+            <p>
+                Logo and graphic designs
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     APPLY / ORDER FORM
+================================================== -->
+
+<section id="apply">
+
+    <div class="section-title">
+
+        <h2>
+            Apply / Order Now
+        </h2>
+
+        <p>
+            Please complete all required fields before submitting.
+        </p>
+
+    </div>
+
+
+    <div class="form-container">
+
+
+        <div class="notice">
+
+            <strong>
+                Important:
+            </strong>
+
+            Fields marked with
+            <span class="required">*</span>
+            are required.
+
+            If any required field is empty,
+            the order will NOT be submitted.
+
+        </div>
+
+
+        <form
+            id="orderForm"
+            novalidate>
+
+
+            <!-- FULL NAME -->
+
+            <div class="form-group">
+
+                <label for="fullName">
+
+                    Full Name
+                    <span class="required">*</span>
+
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                    minlength="2">
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="form-group">
+
+                <label for="phone">
+
+                    Contact / WhatsApp Number
+                    <span class="required">*</span>
+
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your WhatsApp number"
+                    autocomplete="tel"
+                    required
+                    minlength="10">
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+
+                    Gmail
+                    <span class="required">*</span>
+
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    autocomplete="email"
+                    required>
+
+            </div>
+
+
+            <!-- SERVICE -->
+
+            <div class="form-group">
+
+                <label for="service">
+
+                    Required Service
+                    <span class="required">*</span>
+
+                </label>
+
+                <select
+                    id="service"
+                    name="service"
+                    required>
+
+                    <option value="">
+                        -- Select Service --
+                    </option>
+
+                    <option value="CV Creation">
+                        CV Creation
+                    </option>
+
+                    <option value="MS Word">
+                        MS Word
+                    </option>
+
+                    <option value="MS Excel">
+                        MS Excel
+                    </option>
+
+                    <option value="PowerPoint">
+                        PowerPoint
+                    </option>
+
+                    <option value="Data Entry">
+                        Data Entry
+                    </option>
+
+                    <option value="Logo Design">
+                        Logo Design
+                    </option>
+
+                    <option value="Digital Marketing">
+                        Digital Marketing
+                    </option>
+
+                    <option value="Video Editing">
+                        Video Editing
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- MATRIC -->
+
+            <div class="form-group">
+
+                <label for="matric">
+
+                    Matric Marks
+                    <span class="required">*</span>
+
+                </label>
+
+                <input
+                    type="text"
+                    id="matric"
+                    name="matric"
+                    placeholder="Example: 989 / 1100"
+                    required>
+
+            </div>
+
+
+            <!-- FSC -->
+
+            <div class="form-group">
+
+                <label for="fsc">
+
+                    FSC / Intermediate Marks
+                    <span class="required">*</span>
+
+                </label>
+
+                <input
+                    type="text"
+                    id="fsc"
+                    name="fsc"
+                    placeholder="Enter FSC / Intermediate marks"
+                    required>
+
+            </div>
+
+
+            <!-- SKILLS -->
+
+            <div class="form-group">
+
+                <label for="skills">
+
+                    Your Skills
+                    <span class="required">*</span>
+
+                </label>
+
+                <input
+                    type="text"
+                    id="skills"
+                    name="skills"
+                    placeholder="Example: MS Office, Data Entry, Design"
+                    required
+                    minlength="2">
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="form-group">
+
+                <label for="message">
+
+                    Additional Information
+                    <span class="required">*</span>
